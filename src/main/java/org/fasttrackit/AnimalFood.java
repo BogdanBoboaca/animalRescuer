@@ -8,4 +8,9 @@ public class AnimalFood {
     double amount;
     Date expirationDate;
     double availableStock;
+    String foodType; //HERBIVORE, CARNIVORE, OMNIVORES, INSECTIVORE
+    String dryOrWetFood;
+    boolean bulkOrPackaged;
+    String allergy;
+
 }
