@@ -16,9 +16,9 @@ public class App
         Animal firstAnimal = new Animal();
         firstAnimal.name = "Rex";
         firstAnimal.age = 2;
-        firstAnimal.healthLevel = HealthLevel.ten.getHealthScore();
-        firstAnimal.hungerLevel = HungerLevel.two.getHungerScore();
-        firstAnimal.spiritLevel = SpiritLevel.ten.getSpiritLevel();
+        firstAnimal.healthLevel = 10;
+        firstAnimal.hungerLevel = 10;
+        firstAnimal.spiritLevel = 10;
         firstAnimal.favoriteFood = "Pedigree";
         firstAnimal.favoriteRecreationActivity = "Playing Catch";
 
@@ -32,7 +32,7 @@ public class App
         firstFood.amount = 350;
 
         firstFood.expirationDate = new SimpleDateFormat( "dd/MM/yyyy HH:mm:ss").parse("27/07/2020 11:57:33");
-        firstFood.availableStock = 30;
+        firstFood.remainingStock = 30;
 
         RecreationalActivity firstActivity = new RecreationalActivity();
         firstActivity.name = "Playing Catch";
@@ -50,8 +50,11 @@ public class App
         System.out.println("Dogs Favourite Recreation Activity is: " + firstAnimal.favoriteRecreationActivity);
 
 
-        System.out.println(firstAnimal.name + " Adopter is " + firstAdopter.name + " which has a budget of " + firstAdopter.availableMoney);
-        System.out.println(firstAnimal.name + " Favourite Food is " + firstFood.name + " With a price of " + firstFood.price + "$" + " per " + firstFood.amount+ "g" + " Expiration Date " + firstFood.expirationDate + " Stock Available " + firstFood.availableStock +"packages ");
+        System.out.println(firstAnimal.name + " Adopter is " + firstAdopter.name + " which has a budget of "
+                + firstAdopter.availableMoney);
+        System.out.println(firstAnimal.name + " Favourite Food is " + firstFood.name + " With a price of "
+                + firstFood.price + "$" + " per " + firstFood.amount+ "g" + " Expiration Date "
+                + firstFood.expirationDate + " Stock Available " + firstFood.remainingStock +"packages ");
         System.out.println(firstAnimal.name + " Favourite Activity is " + firstActivity.name);
         System.out.println(firstAnimal.name + " Veterinarian is " + firstVeterinarian.name + " with a specialization in " + firstVeterinarian.specialization);
 
