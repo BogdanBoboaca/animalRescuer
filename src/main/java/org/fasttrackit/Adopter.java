@@ -9,5 +9,9 @@ public class Adopter {
     String favouriteAnimal;
     double availableMoney;
 
+    public Adopter(String name) {
+        this.name = name;
+    }
+
 
 }

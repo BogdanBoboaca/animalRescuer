@@ -13,7 +13,10 @@ public class App
     public static void main( String[] args ) throws ParseException {
         System.out.println( "Welcome to Animal Rescuer World!" );
 
-        Animal firstAnimal = new Animal();
+        Breed firstBreed = new Breed();
+        firstBreed.typeOfBreed = "Siberian Husky";
+
+        Dog firstAnimal = new Dog(firstBreed);
         firstAnimal.name = "Rex";
         firstAnimal.age = 2;
         firstAnimal.healthLevel = 10;
@@ -22,24 +25,21 @@ public class App
         firstAnimal.favoriteFood = "Pedigree";
         firstAnimal.favoriteRecreationActivity = "Playing Catch";
 
-        Adopter firstAdopter = new Adopter();
-        firstAdopter.name = "Robin";
+
+        Adopter firstAdopter = new Adopter("Robin");
         firstAdopter.availableMoney = 150.9;
 
-        AnimalFood firstFood = new AnimalFood();
-        firstFood.name = "Pedigree";
+        AnimalFood firstFood = new AnimalFood("Pedigree");
         firstFood.price = 2.99;
         firstFood.amount = 350;
 
+        RecreationalActivity firstActivity = new RecreationalActivity("Playing Catch");
+
+        Veterinarian firstVeterinarian = new Veterinarian("Paul", "Canine");
+
+
         firstFood.expirationDate = new SimpleDateFormat( "dd/MM/yyyy HH:mm:ss").parse("27/07/2020 11:57:33");
         firstFood.remainingStock = 30;
-
-        RecreationalActivity firstActivity = new RecreationalActivity();
-        firstActivity.name = "Playing Catch";
-
-        Veterinarian firstVeterinarian = new Veterinarian();
-        firstVeterinarian.name = "Paul";
-        firstVeterinarian.specialization = "Canine";
 
         System.out.println("Dogs Name is: " + firstAnimal.name);
         System.out.println("Dogs Age is: " + firstAnimal.age);
@@ -56,7 +56,8 @@ public class App
                 + firstFood.price + "$" + " per " + firstFood.amount+ "g" + " Expiration Date "
                 + firstFood.expirationDate + " Stock Available " + firstFood.remainingStock +"packages ");
         System.out.println(firstAnimal.name + " Favourite Activity is " + firstActivity.name);
-        System.out.println(firstAnimal.name + " Veterinarian is " + firstVeterinarian.name + " with a specialization in " + firstVeterinarian.specialization);
+        System.out.println(firstAnimal.name + " Veterinarian is " + firstVeterinarian.name
+                + " with a specialization in " + firstVeterinarian.specialization);
 
     }
 }

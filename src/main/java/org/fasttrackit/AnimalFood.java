@@ -13,4 +13,7 @@ public class AnimalFood {
     boolean bulkOrPackaged;
     String allergy;
 
+    public AnimalFood(String name) {
+        this.name = name;
+    }
 }

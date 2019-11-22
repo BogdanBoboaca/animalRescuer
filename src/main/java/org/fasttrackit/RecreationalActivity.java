@@ -8,4 +8,7 @@ public class RecreationalActivity {
     double price;
     String training;
 
+    public RecreationalActivity(String name) {
+        this.name = name;
+    }
 }

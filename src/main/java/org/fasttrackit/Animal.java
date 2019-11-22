@@ -9,8 +9,9 @@ public class Animal {
     int spiritLevel;
     String favoriteFood;
     String favoriteRecreationActivity;
-    String breed;
     String weight;
     String waist;
     boolean trained;
+
+
 }

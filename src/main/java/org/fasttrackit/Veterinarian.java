@@ -11,4 +11,8 @@ public class Veterinarian {
     Date timetable;
     double price;
 
+    public Veterinarian(String name, String specialization) {
+        this.name = name;
+        this.specialization = specialization;
+    }
 }
