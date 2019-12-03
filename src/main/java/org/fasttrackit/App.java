@@ -3,11 +3,6 @@ package org.fasttrackit;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args ) throws ParseException {

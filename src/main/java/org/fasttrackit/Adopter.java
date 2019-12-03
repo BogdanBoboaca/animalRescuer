@@ -59,5 +59,51 @@ public class Adopter{
     }
 
 
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getTypeOfAccommodation() {
+        return typeOfAccommodation;
+    }
+
+    public void setTypeOfAccommodation(String typeOfAccommodation) {
+        this.typeOfAccommodation = typeOfAccommodation;
+    }
+
+    public String getFavouriteAnimal() {
+        return favouriteAnimal;
+    }
+
+    public void setFavouriteAnimal(String favouriteAnimal) {
+        this.favouriteAnimal = favouriteAnimal;
+    }
+
+    public double getAvailableMoney() {
+        return availableMoney;
+    }
+
+    public void setAvailableMoney(double availableMoney) {
+        this.availableMoney = availableMoney;
+    }
 }
