@@ -22,7 +22,7 @@ public class App
         firstAnimal.setHealthLevel(10);
         firstAnimal.setHungerLevel(10);
         firstAnimal.setSpiritLevel(10);
-        firstAnimal.setFavoriteFood("Pedigree");
+        firstAnimal.setFavoriteFood("Purina");
         firstAnimal.setFavoriteRecreationActivity("Playing Catch");
 
         Adopter firstAdopter = new Adopter("John");
