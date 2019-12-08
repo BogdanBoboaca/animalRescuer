@@ -51,4 +51,15 @@ public class RecreationalActivity {
     public void setTraining(String training) {
         this.training = training;
     }
+
+    @Override
+    public String toString() {
+        return "RecreationalActivity{" +
+                "name='" + name + '\'' +
+                ", outdoorOrIndoor='" + outdoorOrIndoor + '\'' +
+                ", type='" + type + '\'' +
+                ", price=" + price +
+                ", training='" + training + '\'' +
+                '}';
+    }
 }

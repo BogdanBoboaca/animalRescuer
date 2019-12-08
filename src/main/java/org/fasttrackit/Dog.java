@@ -1,5 +1,6 @@
 package org.fasttrackit;
 
+
 public class Dog extends Pets {
 
     String typeOfDog;
@@ -7,5 +8,10 @@ public class Dog extends Pets {
 
     public Dog(Breed breed) {
         super(breed);
+    }
+
+    // Constructor overloading
+    public Dog (){
+        this (new Breed());
     }
 }

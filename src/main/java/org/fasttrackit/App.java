@@ -11,7 +11,7 @@ public class App
         Breed firstBreed = new Breed();
         firstBreed.typeOfBreed = "Siberian Husky";
 
-        Dog firstAnimal = new Dog(firstBreed);
+        Animal firstAnimal = new Dog(firstBreed);
         firstAnimal.setName("Chaika");
         firstAnimal.setAge(2);
         firstAnimal.setHealthLevel(10);
@@ -23,7 +23,7 @@ public class App
         Adopter firstAdopter = new Adopter("John");
         firstAdopter.availableMoney = 150.9;
 
-        AnimalFood firstFood = new AnimalFood("Purina");
+        AnimalFood firstFood = new AnimalFood("purina");
         firstFood.price = 2.99;
         firstFood.amount = 350;
 
