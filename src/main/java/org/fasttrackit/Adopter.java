@@ -106,4 +106,16 @@ public class Adopter{
     public void setAvailableMoney(double availableMoney) {
         this.availableMoney = availableMoney;
     }
+
+    @Override
+    public String toString() {
+        return "Adopter{" +
+                "name='" + name + '\'' +
+                ", sex='" + sex + '\'' +
+                ", age=" + age +
+                ", typeOfAccommodation='" + typeOfAccommodation + '\'' +
+                ", favouriteAnimal='" + favouriteAnimal + '\'' +
+                ", availableMoney=" + availableMoney +
+                '}';
+    }
 }

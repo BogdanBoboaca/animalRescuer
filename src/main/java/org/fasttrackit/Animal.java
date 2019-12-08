@@ -13,7 +13,10 @@ public class Animal {
     private String waist;
     private boolean trained;
 
-
+    @Override
+    public Animal clone(){
+        return new Animal();
+    }
 
 
     public String getName() {
@@ -94,5 +97,21 @@ public class Animal {
 
     public void setTrained(boolean trained) {
         this.trained = trained;
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", healthLevel=" + healthLevel +
+                ", hungerLevel=" + hungerLevel +
+                ", spiritLevel=" + spiritLevel +
+                ", favoriteFood='" + favoriteFood + '\'' +
+                ", favoriteRecreationActivity='" + favoriteRecreationActivity + '\'' +
+                ", weight='" + weight + '\'' +
+                ", waist='" + waist + '\'' +
+                ", trained=" + trained +
+                '}';
     }
 }

@@ -13,6 +13,8 @@ public class AnimalFood {
     boolean bulkOrPackaged;
     String allergy;
 
+
+
     public AnimalFood(String name) {
         this.name = name;
     }
@@ -88,5 +90,20 @@ public class AnimalFood {
 
     public void setAllergy(String allergy) {
         this.allergy = allergy;
+    }
+
+    @Override
+    public String toString() {
+        return "AnimalFood{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", amount=" + amount +
+                ", expirationDate=" + expirationDate +
+                ", remainingStock=" + remainingStock +
+                ", foodType='" + foodType + '\'' +
+                ", dryOrWetFood='" + dryOrWetFood + '\'' +
+                ", bulkOrPackaged=" + bulkOrPackaged +
+                ", allergy='" + allergy + '\'' +
+                '}';
     }
 }

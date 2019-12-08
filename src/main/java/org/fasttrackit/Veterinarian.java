@@ -63,4 +63,16 @@ public class Veterinarian {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return "Veterinarian{" +
+                "name='" + name + '\'' +
+                ", specialization='" + specialization + '\'' +
+                ", experience=" + experience +
+                ", field='" + field + '\'' +
+                ", timetable=" + timetable +
+                ", price=" + price +
+                '}';
+    }
 }
