@@ -23,7 +23,7 @@ public class App
         Adopter firstAdopter = new Adopter("John");
         firstAdopter.availableMoney = 150.9;
 
-        AnimalFood firstFood = new AnimalFood("Purina");
+        AnimalFood firstFood = new AnimalFood("purina");
         firstFood.price = 2.99;
         firstFood.amount = 350;
 
