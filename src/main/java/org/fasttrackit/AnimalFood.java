@@ -15,9 +15,9 @@ public class AnimalFood {
 
 
 
-    public AnimalFood(String name) {
-        this.name = name;
-    }
+//    public AnimalFood(String name) {
+//        this.name = name;
+//    }
 
 
     public String getName() {

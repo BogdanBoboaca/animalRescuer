@@ -8,6 +8,9 @@ public class App
     public static void main( String[] args ) throws ParseException {
         System.out.println( "Welcome to Animal Rescuer World!" );
 
+        Game game = new Game();
+        game.start();
+
         Breed firstBreed = new Breed();
         firstBreed.typeOfBreed = "Siberian Husky";
 
@@ -23,14 +26,16 @@ public class App
         Adopter firstAdopter = new Adopter("John");
         firstAdopter.availableMoney = 150.9;
 
-        AnimalFood firstFood = new AnimalFood("purina");
+        AnimalFood firstFood = new AnimalFood();
+        firstFood.setName("Purina");
         firstFood.price = 2.99;
         firstFood.amount = 350;
 
         Adopter feeding = new Adopter("John");
         feeding.feedAnimal(firstAnimal,firstFood);
 
-        RecreationalActivity firstActivity = new RecreationalActivity("Playing Catch");
+        RecreationalActivity firstActivity = new RecreationalActivity();
+        firstActivity.setName("Playing Catch");
 
         Adopter playing = new Adopter("John");
         playing.activity(firstAnimal,firstActivity);

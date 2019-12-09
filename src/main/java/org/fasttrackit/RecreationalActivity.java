@@ -8,9 +8,9 @@ public class RecreationalActivity {
     double price;
     String training;
 
-    public RecreationalActivity(String name) {
-        this.name = name;
-    }
+//    public RecreationalActivity(String name) {
+//        this.name = name;
+//    }
 
     public String getName() {
         return name;
